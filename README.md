@@ -70,13 +70,17 @@ npm run start
 
 ## Notes on React
 
-I was initially frustrated by React due to it's extremely unopinionated nature. It was difficult to figure out how to
-structure a React application given the simplicity of the boilerplate provided by the Create React App utility. I ended up
-choosing a hybrid structure somewhere between what is used by Vue.js and Angular, and that actually worked out great. I 
-chose MobX for data and state management over Redux again because of the extremely unopinionated nature of Redux. MobX 
-provided clear instructions for setting up a store manager in a React environment even though it really is just a set
-of utility HOC wrappers. It also reminded me a little of working with RxJS in Angular. Once I had my application 
-architecture in place, porting the application over mostly became an exercise in building my render functions in React. 
+I was initially frustrated by React due to it's extremely unopinionated nature. 
+It was difficult to figure out how to structure a React application given the simplicity of the boilerplate provided by 
+the Create React App utility and the documentation provide on the React website. 
+I ended up choosing a hybrid structure somewhere between what is used by the Vue.js and Angular boilerplate, and that 
+actually worked out great. 
+I chose MobX for data and state management over Redux, again because of the extremely unopinionated nature of Redux and 
+the ambiguity of where to start given the documentation. 
+MobX provided clear instructions for setting up a store manager in a React environment even though it 
+really is just a set of utility HOC wrappers. 
+It also reminded me a little of working with RxJS in Angular. Once I had my application architecture in place, 
+porting the application over mostly became an exercise in building my render functions in React. 
 
 ## Author
 Brock Henderson [@brocktopia](https://github.com/brocktopia/) ||
