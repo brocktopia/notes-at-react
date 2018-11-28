@@ -1,0 +1,44 @@
+.app-container.note {
+  .content {
+    overflow-y: hidden;
+  }
+  .body {
+    height: calc(100% - 40px);
+    padding: 0 20px 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .body > div {
+    margin: 10px 0;
+  }
+  .date, .geocoords, .places {
+    float: left;
+    clear: left;
+  }
+  .geocoords img {
+    vertical-align: middle;
+  }
+  .geocords-link, .place-link {
+    svg {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+    }
+  }
+  .geocords-link svg, .place-icon {
+    margin-right: 5px;
+  }
+  .place-link svg {
+    margin-left: 5px;
+  }
+  .note {
+    white-space: pre-wrap;
+    clear: both;
+  }
+  a svg {
+    fill: #42b983;
+  }
+  .navigation a {
+    display: inline-block;
+  }
+}

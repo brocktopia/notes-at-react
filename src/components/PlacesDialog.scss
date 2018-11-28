@@ -1,0 +1,57 @@
+div.modal-mask.places-dialog {
+  input {
+    width: 100%;
+  }
+  ul.place-list {
+    max-height: 540px;
+    margin: 10px 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  li.place {
+    height: 30px;
+    width: 100%;
+    cursor: pointer;
+    font-size: smaller;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  li.place img {
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  /* Mobile rules */
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    div.modal-wrapper div.modal-container {
+      margin: 100px auto auto;
+      position: relative;
+      width: 90%;
+      height: calc(100vh - 150px);
+      ul.place-list {
+        max-height: calc(100vh - 320px);
+        li.place {
+          font-size: 1.2rem;
+          height: 45px;
+          img {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+    }
+    .modal-footer {
+      position: absolute;
+      bottom: 5px;
+      width: calc(100vw - 120px);
+    }
+  }
+  /* Non-mobile rules */
+  @media screen and (min-width: 800px) {
+    .modal-mask .modal-container {
+      width: 460px;
+      max-height: 720px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.modal-mask.edit-notebook {
+  .modal-mask .modal-container {
+    width: 450px;
+  }
+  .input-info {
+    font-size: smaller;
+  }
+  .notebooks-message {
+    margin: 20px;
+  }
+  .char-count {
+    color: darkgreen;
+  }
+  .char-count-close {
+    color: orangered;
+  }
+}

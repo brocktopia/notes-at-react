@@ -1,0 +1,189 @@
+.desktop {
+  .content {
+    padding: 8px 20px;
+    display: grid;
+    grid-template-rows: 45px 30px 35px 35px 30px 155px auto;
+  }
+  .content > * {
+    margin-bottom: 10px;
+  }
+  .content input {
+    width: 60%;
+  }
+  #noteName {
+    margin: 0 8px;
+  }
+  .input-info {
+    font-size: smaller;
+  }
+  .char-count {
+    color: orangered;
+  }
+  .geocoords, .place {
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+  }
+  .geocoords .icon-small {
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+  }
+  #geocords {
+    margin: 0 8px;
+  }
+  .place button {
+    vertical-align: top;
+  }
+  .place svg {
+    fill: #ed453b;
+  }
+  span.no-place {
+    font-size: smaller;
+    color: #999999;
+  }
+  span.has-place {
+    display: inline-block;
+    max-width: 340px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: text-bottom;
+  }
+  .search {
+    margin-bottom: 0;
+  }
+  .search input {
+    display: inline-block;
+    width: 250px;
+  }
+  .map-info {
+    float: right;
+    font-size: smaller;
+    color: #888;
+    margin-top: 8px;
+  }
+  .content textarea {
+    width: 100%;
+    heigth: 100%;
+    overflow: auto;
+  }
+  #noteNote {
+    height: 100%;
+  }
+  .content > *:last-child {
+    margin-bottom: 0;
+  }
+}
+.mobile {
+
+  &.app-container .name-edit {
+    display: grid;
+    grid-template-rows: 90px 40px 50px 60px 40px auto;
+  }
+  .app-container.new .name-edit {
+    display: grid;
+    grid-template-rows: 90px 40px 50px 60px 40px auto;
+  }
+  #noteName {
+    font-size: 1.8rem;
+  }
+  .content {
+    padding: 20px;
+  }
+  .content > * {
+    margin-bottom: 10px;
+  }
+  .name label {
+    display: none;
+  }
+  .content input {
+    width: 100%;
+  }
+  .char-count {
+    color: darkgreen;
+  }
+  .char-count-close {
+    color: orangered;
+  }
+  .geocoords, .place {
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+  }
+  #geocords {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 8px;
+    max-width: 440px;
+    line-height: 30px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  span.no-place {
+    font-size: smaller;
+    color: #999999;
+  }
+  span.has-place {
+    display: inline-block;
+    max-width: 340px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: text-bottom;
+  }
+  .place button {
+    vertical-align: middle;
+    &.small {
+      padding: 0.5rem 0.5rem;
+      font-size: 1rem;
+    }
+  }
+  .geocoords button {
+    margin-top: 10px;
+  }
+  .geocoords .icon-small {
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+  }
+  .place svg {
+    fill: #ed453b;
+  }
+  .search {
+    margin-bottom: 0;
+  }
+  .search input.map-search-input {
+    display: inline-block;
+    line-height: 1em;
+    font-size: 1em;
+    width: 250px;
+    min-width: 250px;
+  }
+  .map-info {
+    float: right;
+    font-size: smaller;
+    color: #888;
+    margin-top: 8px;
+  }
+  .note-input {
+    height: 100%;
+  }
+  #noteNote {
+    height: 100%;
+    font-size: 1.8rem;
+  }
+  .content textarea {
+    width: 100%;
+    heigth: 100%;
+    overflow: auto;
+  }
+  .content > *:last-child {
+    margin-bottom: 0;
+  }
+  input, textarea {
+    border-top: thin solid #ccc;
+    border-left: thin solid #ccc;
+  }
+}

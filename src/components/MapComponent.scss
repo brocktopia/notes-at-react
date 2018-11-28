@@ -1,0 +1,19 @@
+.map-component {
+  .infoBox {
+    background-color: white;
+  }
+  .note-info {
+    padding: 5px 10px;
+    font-size: 1rem;
+    max-height: 350px;
+    overflow-y: auto;
+  }
+  h3 {
+    margin: 8px 0;
+  }
+  .tiny-icon, .place-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+  }
+}
