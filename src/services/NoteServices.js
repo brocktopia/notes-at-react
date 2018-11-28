@@ -1,5 +1,8 @@
 
-const host = window.location.protocol + '//' + window.location.host.substr(0, window.location.host.indexOf(':'));
+let host = window.location.protocol + '//' + window.location.host;
+if (window.location.host.indexOf(':') != -1) {
+  host = host.substr(0, host.lastIndexOf(':'))
+}
 const port = (window.location.protocol === 'https:') ? '3031' : '3030';
 const serviceBase = host + ':' + port + '/';
 
@@ -7,7 +10,7 @@ module.exports = {
 
   getNotebooks() {
     const url = serviceBase + 'notebooks';
-    //console.log(`NoteServices.getNotebooks() url: ${url}`);
+    console.log(`NoteServices.getNotebooks() url: ${url}`);
     return fetch(url)
       .then((response) => {
         if (response.ok) {
